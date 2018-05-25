@@ -1,0 +1,124 @@
+#h_buy_car{border-top:3px solid #CFCFCF};
+#h_buy_car .container{border-right: 1px solid #D9D9D9;border-left: 1px solid #D9D9D9;background-color: #f60;}
+#h_buy_car .h_buy_car_top .h_buy_car_top1{
+    height:80px;
+    border-bottom: 2px solid #404040;
+    line-height: 80px;
+}
+#h_buy_car .h_buy_car_top .h_buy_car_top1>li{
+    float:left;
+    font-size: 14px;
+    padding-right: 50px;
+    position:relative;
+}
+#h_buy_car .h_buy_car_top .h_buy_car_top1 .first{
+    padding-left: 76px;
+}
+#h_buy_car .h_buy_car_top .h_buy_car_top1>li>a{
+    font-size: 20px;
+}
+#h_buy_car .h_buy_car_top .h_buy_car_top1 li i{
+    display:block;
+    height:32px;
+    width:22px;
+    background:url(../images/h_b_c_table.fw.png) no-repeat -70px 0;
+    position:absolute;
+    top:25px;
+    left:-36px;
+}
+#h_buy_car .h_buy_car_top .h_buy_car_top1 li .h_buycar{
+    display:block;
+    height:32px;
+    width:36px;
+    background:url(../images/h_b_c_table.fw.png) no-repeat -25px 0;
+    position:absolute;
+    top:25px;
+    left:23px;
+}
+#h_buy_car .h_b_c_list{width:100%;}
+#h_buy_car .h_b_c_list thead{height:36px;border-bottom:1px solid #D9D9D9;background-color: #F6F6F6;line-height: 36px;text-align: left;}
+
+#h_buy_car .h_b_c_list tbody tr{
+    height:100px;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 12px;
+    line-height: 24px;
+} 
+#h_buy_car .h_b_c_list tbody tr td .h_btn{
+   
+    height:15px;
+    width: 15px;
+    background:url(../images/h_b_c_table.fw.png) no-repeat;
+}
+#h_buy_car .h_b_c_list tbody tr td .h_b_c_img{width: 100px;height:100px;display:inline-block;margin-right: 5px;}
+#h_buy_car .h_b_c_list tbody>tr>td .h_links{/*padding-right:66px;*/}
+#h_buy_car .h_b_c_list tbody>tr>td .h_title{
+    color:#3991D1;
+}
+#h_buy_car .h_b_c_list tbody>tr>.h_remove_btn{
+    text-align: center;
+}
+#h_buy_car .h_b_c_list tbody>tr>td .h_b_c_qty{width: 52px;height:20px;text-align: center;line-height: 20px;
+border:1px solid #ccc;
+}
+
+#h_buy_car .h_b_c_list tbody>tr>td>.h_b_c_qty>i{
+    display:inline-block;
+    width: 10px;
+    height:18px;
+    
+}
+#h_buy_car .h_b_c_list tbody>tr>td>.h_b_c_qty .h_qty_show{
+     display:inline-block;
+     width:30px;
+     height:18px;
+     border-right:1px solid #ccc;
+     border-left:1px solid #ccc;
+}
+#h_buy_car .h_b_c_list tbody>tr>td>.h_now_price{
+    color:#FF4500;
+};
+#h_buy_car .h_total_price{}
+#h_buy_car .h_total_price .h_continue{
+    
+    height:120px;
+    border-bottom:1px solid #D9D9D9;
+    font-size: 12px;
+}
+#h_buy_car .h_total_price .h_c_s{
+    display:block;
+    height:120px;
+    width:160px;
+    line-height: 120px;
+    text-align: center;
+
+}
+#h_buy_car .h_total_price .h_continue ul{
+    min-width: ;
+    line-height: 14px;
+    text-align: right;
+    float:right;
+    padding:20px 36px 0 0;
+    
+}
+#h_buy_car .h_total_price .h_continue ul .h_t_p_last{
+    height:30px;
+    width: 186px;
+    background:url(../images/h_buy_car_table2.png) no-repeat;
+    
+}
+.z_item{width: 980px;margin:10px auto;}
+.z_item p{padding-left: 10px;}
+.z_car{position:relative;width: 980px;margin:0 auto;padding-bottom: 20px;border-bottom:2px solid #5A5A5A;}
+.z_carousel{position:relative;width: 980px;height: 190px;overflow:hidden;}
+.z_carousel .goodslist{position:absolute;top:0;left:0;overflow:hidden;width: 10000px;}
+.z_carousel .goodslist li{float:left;width: 133px;font-size: 10px;padding:0 15px;}
+.z_carousel .goodslist li a img{width: 130px;height: 100px;}
+.z_carousel .goodslist li h4{margin-top: 5px;} 
+.z_carousel .goodslist{list-style: none;}
+.z_carousel .goodslist li .z_price{margin-top: 5px;}
+.z_carousel .goodslist li .z_price span{color:#FF4500;}
+.z_carousel .goodslist li .z_addcar{position:relative;width: 80px;background-color: #D2691E;border-top-left-radius: 10px;border-bottom-left-radius: 10px;padding-left: 5px;color:#fff;margin-top: 5px;}
+.z_carousel .goodslist li .z_addcar span{position:absolute;right:0;top:3px;border-left: 5px solid #fff;border-right: 5px solid #D2691E;border-top: 5px solid #D2691E;border-bottom: 5px solid #D2691E;}
+.z_car .btnPrev{position:absolute;left:-30px;top:50%;border-left: 15px solid #fff;border-top: 15px solid #fff;border-bottom: 15px solid #fff;border-right: 15px solid #ccc;opacity: 0.5;}
+.z_car .btnNext{position:absolute;right:-30px;top:50%;border-left: 15px solid #ccc;border-top: 15px solid #fff;border-bottom: 15px solid #fff;border-right: 15px solid #fff;opacity: 0.5;}

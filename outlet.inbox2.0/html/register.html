@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>登陆注册页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/reg-index.css" /> -->
+    <script type="text/javascript">
+	    window.onload=function(){
+	    	var yzm=document.getElementById("yzm");
+	    	var reload=document.getElementById("reload");
+	    	var content=document.getElementById("content");
+	    	var sign=document.getElementById("sign");
+			var num=getrandom(1000,9999);
+
+			content.innerHTML=num;
+	    	sign.onclick=function(){
+	    		var tnum=parseInt(yzm.value);
+	    		if(tnum==num){
+	    			
+	    			content.innerHTML="验证码输入正确！";
+	    			content.style.fontSize='12px';
+	    			content.style.color='green';
+	    			
+	    		}else{
+	    			content.innerHTML="你输入有误,请重新输入!";
+	    			content.style.fontSize='12px';
+
+	    			content.style.color='red';
+
+	    		}	
+	    	}
+	    }
+	    function getrandom(m,n){
+		    var num=parseInt(Math.random()*(n-m+1))+m;
+		    return num;
+		}
+    </script>
+</head>
+<body>
+    <!-- ***********************************************头部内容******************** -->
+    <div id="fyx-top">
+			<div class="container">
+				<div class="fyx-top-l fl">
+			
+					<sapn>Welcome,</sapn>
+					<a href="#">sign in</a>
+					<span>or</span>
+					<a href="#">Register</a>
+					<span class="tyellow">test,</span>
+					<a href="#">sing out</a>
+				
+				</div>
+				<ul class="fyx-top-r fr">
+					<li class="topr-list">
+							<a href="#">My account</a>
+							<ul class="account">
+								<li><a href="#"><i></i><span>My account</span></a></li>
+								<li><a href="#"><i></i><span>My orders</span></a></li>
+								<li><a href="#"><i></i><span>My profiles</span></a></li>
+								<li><a href="#"><i></i><span>My conpones</span></a></li>
+								<li><a href="#"><i></i><span>wishes list</span></a></li>
+								<li><a href="#"><i></i><span>messages</span></a></li>
+							</ul>
+							<i class="iconfont icon-xiangxiajiantoushixin"></i>
+						
+					</li>
+					<li class="icon-shop">
+						<i class="iconfont icon-gouwuche"></i>
+						<span>1 Iteams</span>
+						<span class="tyellow">$2946</span>
+						<i class="iconfont icon-xiangxiajiantoushixin"></i>
+						<ul class="checkout">
+							<li>
+								<i></i>
+								<p class="ch-r">
+									<span>Gucci Vintage Web Leather </span>
+									<span>Boston Tote Bag 247205</span>
+									<span>red</span>
+									<span class="ch-red">$219X1</span>
+								</p>
+							</li>
+							<li>
+								<i></i>
+								<p class="ch-r">
+									<span>Gucci Vintage Web Leather </span>
+									<span>Boston Tote Bag 247205</span>
+									<span>red</span>
+									<span class="ch-red">$219X1</span>
+								</p>
+							</li>
+							<li>
+								<i></i>
+								<p class="ch-r">
+									<span>Gucci Vintage Web Leather </span>
+									<span>Boston Tote Bag 247205</span>
+									<span>red</span>
+									<span class="ch-red">$219X1</span>
+								</p>
+							</li>
+							<li>
+								<i></i>
+								<p class="ch-r">
+									<span>Gucci Vintage Web Leather </span>
+									<span>Boston Tote Bag 247205</span>
+									<span>red</span>
+									<span class="ch-red">$219X1</span>
+								</p>
+							</li>
+							<li class="subtotal">
+								<p>Subtoatal:<span>$219</span></p>
+							</li>
+							<li class="btn">
+								<input type="button" value="Checkout" />
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Order Tracking</a>
+					</li>
+					<li>
+						<i class="iconfont icon-wenhao"></i>
+						<a href="#">help</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	<div id="fyx-header">
+			<div class="container clearfix">
+				<div class="fyx-hleft fl">
+					<h2></h2>
+				</div>
+				<div class="fyx-hcenter fl">
+					<i class="iconfont icon-sousuosearch82"></i>
+					<input type="text" placeholder="please enter the key world"/>
+					<input type="button" value="Seacher" />
+					<p>
+						<a href="#">LV Handbags</a>
+						<a href="#">shoes</a>
+						<a href="#">Rolex wateches</a>
+					</p>
+
+				</div>
+				<div class="fyx-hright fr">
+					<i class="iconfont icon-fl-dianhua"></i>
+					<span>(323)285-8741</span>
+				</div>
+			</div>
+		</div>
+	
+	<div id="fyx-nav">
+			<div class="container">
+				<div class="nav-l fl">
+					<div class="nav-title">
+						<span>ALL CATEGROSE</span>
+						<i class="iconfont icon-caidan"></i>
+						<i class="iconfont icon-xiangxiajiantoushixin"></i>
+						<!-- ============================================================== -->
+							<ul class="lh-nav-ftabs">
+							    <li>
+							        <div class="lh-nav-top clearfix">
+							            <h3 class="fl">bags</h3>
+							            <i class="fr iconfont icon-arrow-right-copy-copy-copy"></i>
+							        </div>
+							        <div class="lh-nav-bottom">
+							            <p class="lh-p1">
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							            </p>
+							            <p class="lh-p2">
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							            </p>
+							        </div>
+							        <div class="lh-nav-stabs clearfix">
+							               <div class="left fl">
+							                   <ul class="left-t">
+							                        <h3>NEL</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                   </ul>
+							                    <ul class="left-t">
+							                        <h3>NBA</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        
+							                   </ul>
+							                   <ul class="left-b left-t">
+							                        <h3>MLB</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							                      <ul class="left-b left-t">
+							                        <h3>NHL</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							               </div>                
+							               <div class="right fl">
+							                  <div class="right-t">
+							                    <span>NEW Arravial</span>
+							                    <i class="iconfont icon-sanjiaoright"></i>
+							                  </div>
+							                  <ul class="right-b">
+							                    <span>final sale </span><i></i>
+							                    <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+
+							                  </ul>
+							               </div>                
+							        </div>
+							    </li>
+							    <li>
+							        <div class="lh-nav-top clearfix">
+							            <h3 class="fl">bags</h3>
+							            <i class="fr iconfont icon-arrow-right-copy-copy-copy"></i>
+							        </div>
+							        <div class="lh-nav-bottom">
+							            <p class="lh-p1">
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							            </p>
+							            <p class="lh-p2">
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							            </p>
+							        </div>
+							        <div class="lh-nav-stabs clearfix">
+							               <div class="left fl">
+							                   <ul class="left-t">
+							                        <h3>NEL</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                   </ul>
+							                    <ul class="left-t">
+							                        <h3>NBA</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        
+							                   </ul>
+							                   <ul class="left-b left-t">
+							                        <h3>MLB</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							                      <ul class="left-b left-t">
+							                        <h3>NHL</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							               </div>                
+							               <div class="right fl">
+							                  <div class="right-t">
+							                    <span>NEW Arravial</span>
+							                    <i class="iconfont icon-sanjiaoright"></i>
+							                  </div>
+							                  <ul class="right-b">
+							                    <span>final sale </span><i></i>
+							                    <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+
+							                  </ul>
+							               </div>                
+							        </div>
+							    </li>
+							    <li>
+							        <div class="lh-nav-top clearfix">
+							            <h3 class="fl">bags</h3>
+							            <i class="fr iconfont icon-arrow-right-copy-copy-copy"></i>
+							        </div>
+							        <div class="lh-nav-bottom">
+							            <p class="lh-p1">
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							            </p>
+							            <p class="lh-p2">
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							            </p>
+							        </div>
+							        <div class="lh-nav-stabs clearfix">
+							               <div class="left fl">
+							                   <ul class="left-t">
+							                        <h3>NEL</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                   </ul>
+							                    <ul class="left-t">
+							                        <h3>NBA</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        
+							                   </ul>
+							                   <ul class="left-b left-t">
+							                        <h3>MLB</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							                      <ul class="left-b left-t">
+							                        <h3>NHL</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							               </div>                
+							              <div class="right fl">
+							                  <div class="right-t">
+							                    <span>NEW Arravial</span>
+							                    <i class="iconfont icon-sanjiaoright"></i>
+							                  </div>
+							                  <ul class="right-b">
+							                    <span>final sale </span><i></i>
+							                    <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+
+							                  </ul>
+							               </div>                 
+							        </div>
+							    </li>
+							    <li>
+							        <div class="lh-nav-top clearfix">
+							            <h3 class="fl">bags</h3>
+							            <i class="fr iconfont icon-arrow-right-copy-copy-copy"></i>
+							        </div>
+							        <div class="lh-nav-bottom">
+							            <p class="lh-p1">
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							            </p>
+							            <p class="lh-p2">
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							            </p>
+							        </div>
+							        <div class="lh-nav-stabs clearfix">
+							               <div class="left fl">
+							                   <ul class="left-t">
+							                        <h3>NEL</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                   </ul>
+							                    <ul class="left-t">
+							                        <h3>NBA</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        
+							                   </ul>
+							                   <ul class="left-b left-t">
+							                        <h3>MLB</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							                      <ul class="left-b left-t">
+							                        <h3>NHL</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							               </div>                
+							              <div class="right fl">
+							                  <div class="right-t">
+							                    <span>NEW Arravial</span>
+							                    <i class="iconfont icon-sanjiaoright"></i>
+							                  </div>
+							                  <ul class="right-b">
+							                    <span>final sale </span><i></i>
+							                    <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+
+							                  </ul>
+							               </div>                 
+							        </div>
+							    </li>
+							    <li>
+							        <div class="lh-nav-top clearfix">
+							            <h3 class="fl">bags</h3>
+							            <i class="fr iconfont icon-arrow-right-copy-copy-copy"></i>
+							        </div>
+							        <div class="lh-nav-bottom">
+							            <p class="lh-p1">
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							            </p>
+							            <p class="lh-p2">
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							            </p>
+							        </div>
+							        <div class="lh-nav-stabs clearfix">
+							               <div class="left fl">
+							                   <ul class="left-t">
+							                        <h3>NEL</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                   </ul>
+							                    <ul class="left-t">
+							                        <h3>NBA</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        
+							                   </ul>
+							                   <ul class="left-b left-t">
+							                        <h3>MLB</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							                      <ul class="left-b left-t">
+							                        <h3>NHL</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							               </div>                
+							               <div class="right fl">
+							                  <div class="right-t">
+							                    <span>NEW Arravial</span>
+							                    <i class="iconfont icon-sanjiaoright"></i>
+							                  </div>
+							                  <ul class="right-b">
+							                    <span>final sale </span><i></i>
+							                    <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+
+							                  </ul>
+							               </div>               
+							        </div>
+							    </li>
+							    <li>
+							        <div class="lh-nav-top clearfix">
+							            <h3 class="fl">bags</h3>
+							            <i class="fr iconfont icon-arrow-right-copy-copy-copy"></i>
+							        </div>
+							        <div class="lh-nav-bottom">
+							            <p class="lh-p1">
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							                <a href="#">buggage</a>
+							            </p>
+							            <p class="lh-p2">
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							                <a href="#">birkle</a>
+							            </p>
+							        </div>
+							        <div class="lh-nav-stabs clearfix">
+							               <div class="left fl">
+							                   <ul class="left-t">
+							                        <h3>NEL</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                            <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                   </ul>
+							                    <ul class="left-t">
+							                        <h3>NBA</h3>
+							                       <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        <li>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>
+							                        
+							                   </ul>
+							                   <ul class="left-b left-t">
+							                        <h3>MLB</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							                      <ul class="left-b left-t">
+							                        <h3>NHL</h3>
+							                       <li class="clearfix">
+							                           <a href="#">buffalo Ravans</a>
+							                           <a href="#">buffalo Ravans</a>
+							                       </li>     
+							                   </ul>
+							               </div>                
+							               <div class="right fl">
+							                  <div class="right-t">
+							                    <span>NEW Arravial</span>
+							                    <i class="iconfont icon-sanjiaoright"></i>
+							                  </div>
+							                  <ul class="right-b">
+							                    <span>final sale </span><i></i>
+							                    <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                     <li>
+							                      <a href="#">Louis Vuitton</a>
+							                      <i class="iconfont icon-sanjiaoright"></i>
+							                    </li>
+							                  </ul>
+							               </div>                
+							        </div>
+							    </li>
+							   
+							</ul>
+
+
+						<!-- =================================================================== -->
+					</div>
+
+				</div>
+				<ul class="nav-c fl">
+					<li><a href="#"><span>HOME</span></a></li>
+					<li><a href="#"><span>NEW Arrival</span></a></li>
+					<li><a href="#"><span>Final sales</span></a></li>
+					<li><a href="#" class="icon-l"><i class="iconfont icon-kuaijiecaidan"></i><span>brands</span></a></li>
+					<li class="off"><a href="#" class="icon-l"><i></i><span>Albums</span></a></li>
+				</ul>
+				<div class="nav-r fr">
+					<a href="#">Rerister Nows</a>
+					<span></span>
+				</div>
+			</div>
+		</div>
+    <!-- ***********************************************头部内容******************** -->
+    <!-- ***********************************************登录部分******************** -->
+    	
+    <div id="cgj-reg">	
+    	<div class="container">
+	    	<div class="reg-t">
+	    		<h2>Sign In or Register a New Account</h2>
+	    	</div>
+	    	<div class="reg-b">
+	    		<form action="#" class="reg-bl fl">
+	    			<label for="email" class="email">Email Address:</label><br />
+	    			<input type="email" id="email" name="email" required placeholder="请输入邮箱地址"/><br />
+	    			<label for="pwd" class="pwd">Password:</label><br />
+	    			<input type="password" id="pwd" name="password" required placeholder="请输入密码"/><br />
+	    			<!-- 验证码 -->
+						<label for="yzm">验证码:</label><br />
+						<input type="text" placeholder="请输入验证码！" name="yzm" id="yzm" />
+			
+						<span id="content"></span>
+						<br />
+
+	    			<!-- 验证码 -->
+	    			<input type="submit" value="Sign In" id="sign"/>
+	    		</form>
+
+	    		<form action="#" class="reg-br fr">
+	    			<div class="title">
+	    				<p>EXCLUSIVE VIP OFFER for every new member!</p>
+	    				<span>10% and5% and 2% and $5 OFF</span>
+	    				<a href="#">details>></a>
+	    			</div>
+	    			<label for="r-email" class="r-email">Email Address:</label><br />
+	    			<input type="email" id="r-email" name="r-email" required placeholder="请输入邮箱地址"/><br />
+               		<label class="mb">Span is evil and you'll never see any from us.</label>
+
+					<span class="none"></span>
+
+	    			<label for="pwd" class="r-pwd">Password:</label><br />
+	    			<input type="password" id="r-pwd" name="r-password" required placeholder="请输入密码"/><br />
+
+	    			<label for="pwd" class="r-pwd">Confirm Password:</label><br />
+	    			<input type="password" id="r-pwd" name="r-password" placeholder="请再次输入确认密码" /><br />
+
+					<label for="updates" class="updates">
+						<input type="checkbox" id="updates" name="updates" checked/>
+						Get periodic updates 
+					</label>
+
+					<p class="updates-p1">It will be an email worth reading. And it won't come too often.</p>
+					<label for="agress" class="agress">
+						<input type="checkbox" id="agress" name="agress" checked/>
+						I gree to tidemalls.com
+						<a href="#">Terms of Use</a>
+					</label><br />
+
+
+
+
+	    			<input type="submit" value="Register" />
+	    		</form>
+
+	    	</div>
+	    	
+	    	
+    		
+    	</div>
+    </div> 
+    <!-- ***********************************************登录部分******************** -->
+    <!-- ***********************************************底部内容******************** -->
+	  <div id="X-footer">
+        <div class="container">
+             <ul class="footer_T">
+              
+           	 </ul>
+                <div class="footer_C">
+                    <ul>
+                        <p>Coustomer Service</p>
+                        <li><a href="#">Shopping Guide</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FQY</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <ul>
+                        <p>Company Info</p>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Why Buy From Us</a></li>
+                        <li><a href="#">Privacy & Securiry Policy</a></li>
+                        <li><a href="#">Team Of Use</a></li>
+                    </ul>
+                    <ul>
+                        <p>Make Money With Us</p>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Points & Coupon,Gifts</a></li>
+                    </ul>
+                    <ul class="footer_C1">
+                        <p>Join Our Community</p>
+                        <li><a href="#"><i></i><span>Add Us</span><br/><span>on facebook</span></a></li>
+                        <li><a href="#"><i style="background-position:-22px 0;"></i><span>Follow Us</span><br/><span>on twitter</span></a></li>
+                        <li><a href="#"><i style="background-position:-50px 0;"></i><span>Read Us</span><br/><span>on our offical blog</span></a></li>
+                    </ul>
+                    <div class="footer_C-last">
+                        <p>Enter Your E-mail adress and get your FREE E-Book!</p>
+                        <input type="text" value="Enter your Email adress" />
+                        <a href="#"><i></i>Subsible</a>
+                    </div>
+                </div> 
+	        <div class="footer_Tu">
+	            <img src="images/Tu.png"/>
+	        </div>
+	        <div class="footer_B">
+	            <p>@2008~2013<span>Tedemalls.com</span> All Right Reserved</p>
+	        </div>
+         </div>
+     </div><!-- 底部代码 --><!-- 底部代码 -->
+    <!-- ***********************************************底部内容******************** -->
+</body>
+</html>
