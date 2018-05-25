@@ -1,0 +1,340 @@
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+a {text-decoration:none; }
+
+/*（2）添加公共样式*/
+/*body {
+    font:12px Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}*/
+.clearfix::after{
+    content:"";
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    clear:both;
+    zoom:1;
+}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+
+
+/*公共类*/
+.container {  /*内容、版心 提取 */
+    width: 980px;
+    /*background-color:yellow;*/
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.hide {
+    display:none;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+
+
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1523679126109'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1523679126109#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('../font/iconfont.ttf?t=1523679126109') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1523679126109#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bangzhu:before { content: "\e629"; }
+
+.icon-gouwuche:before { content: "\e62c"; }
+
+.icon-tel:before { content: "\e63a"; }
+
+.icon-sanjiaoxing:before { content: "\e665"; }
+
+.icon-search:before { content: "\e623"; }
+
+
+
+
+
+
+#outlet-h{}
+#header-h{
+    background-color:#FF4500;
+   
+}
+#header-h .container{
+    height:88px;
+}
+#header-h .header-h-t{
+    height:30px;
+}
+#header-h .header-h-t p{
+    font-size:12px;
+    padding-top: 4px;
+    color:#fff;
+    height:26px;
+    width:270px; 
+}
+#header-h .header-h-t p a{
+    text-decoration:underline;
+     color:#fff;
+}
+#header-h .header-h-t p span{
+    color:#FFCC00;
+}
+#header-h .header-h-t ul li{float:left;position:relative;}
+#header-h .header-h-t ul li a{
+    display:block;
+    height:20px;
+    padding-top:4px;
+    color:#fff;
+    box-sizing: border-box;
+    font-size: 12px;
+    z-index: 3;
+}
+#header-h .header-h-t ul li a span{
+    padding:0 8px 0 8px;
+    position:relative;
+}
+#header-h .header-h-t ul li a .icon-r{
+    padding-right:21px;
+    border-right:1px solid #FF4500;
+   /* border-bottom:1px solid #ccc;*/
+   
+}
+
+#header-h .header-h-t ul li a .icon-l{
+    padding-left:28px;
+}
+#header-h .header-h-t ul li a .icon-r .icon-sanjiaoxing{
+    font-size:12px;
+    position:absolute;
+    right:8px;
+    top:0px; 
+
+}
+#header-h .header-h-t ul li a .icon-r .icon-gouwuche{
+    font-size:14px;
+    position:absolute;
+   left:12px;
+    top:-3px; 
+}
+#header-h .header-h-t ul li a .icon-l .icon-bangzhu{
+    font-size:14px;
+    position:absolute;
+    left:8px;
+    top:0px; 
+}
+#header-h .header-h-t ul li a .last{
+    text-decoration: underline;
+}
+#header-h .header-h-t ul li .list1{
+    width: 120px;
+    height: 184px;
+    border:1px solid #CFCFCF;
+    position:absolute;
+    top:20px;
+    left:0;
+    background-color: #fff;
+    z-index:2;
+    padding:0 6px;
+    display:none;
+}
+#header-h .header-h-t ul li .list1 li{}
+
+#header-h .header-h-t ul li .list1 li a{
+    display:block;
+    height:29px;
+     width: 120px;
+    border-bottom:1px dashed #CFCFCF;
+    color:#000;
+    line-height: 20px;
+    position:relative;
+}
+#header-h .header-h-t ul li .list1 li a span{
+    padding:27px;
+}
+#header-h .header-h-t ul li .list1 li a i{
+    display:block;
+    width: 18px;
+    height: 15px;
+    background:url(../images/outletbox-h.fw.png) no-repeat -110px 0;
+    position:absolute;
+    left:4px;
+    top:8px;
+}
+
+
+
+#header-h .header-h-t ul .list-f:hover .list0{
+    display:block;
+}
+#header-h .header-h-t ul .list-f:hover .list-f-1{
+    border-right:1px solid #CFCFCF;
+    border-bottom:1px solid #fff;
+    color:#FF4552;
+    background-color: #fff;
+
+}
+#header-h .header-h-t ul .list-f:hover .list-f-1 span{
+    border-right:0 none;
+}
+
+
+
+
+
+#header-h .header-h-t ul li .list2 {
+    width: 199px;
+    height: 275px;
+    border:1px solid #CFCFCF;
+    position:absolute;
+    top:20px;
+    left:0px;
+    background-color: #fff;
+    z-index: 2;
+    padding:2px 15px 0 12px;  
+    display:none; 
+}
+#header-h .header-h-t ul li .list2 li{
+    height:68px;
+    
+}
+#header-h .header-h-t ul li .list2 li i{
+    display:block;
+    height:48px;
+    width: 48px;
+    background:url(../images/header-h-list2-1.png) no-repeat;
+    float:left;
+    margin-top:9px;
+}
+#header-h .header-h-t ul li .list2 li p{
+    float:right;
+    width:141px;
+    height: 55px;
+    padding-left:6px;
+
+}
+#header-h .header-h-t ul li .list2 li p a{
+    color:#000;
+    font-size:12px;
+}
+#header-h .header-h-t ul li .list2 li p span{
+    color:#F36A34;
+}
+#header-h .header-h-t ul li .list2 .last{
+    height: 61px;
+    width: 199px;
+    padding-top:10px;
+    font-size: 12px;
+    text-align: center;
+}
+#header-h .header-h-t ul li .list2 .last h3{
+    
+    line-height: 24px;
+    
+    color:#535353;
+}
+#header-h .header-h-t ul li .list2 .last input{
+    height:24px;
+    width: 104px;
+    background-color: #515152;
+    color:#fff;
+}
+
+
+#header-h .header-h-b{
+    height:58px;
+}
+#header-h .header-h-b h1{
+    text-indent:-10000px;
+    height:58px;
+    width: 270px;
+    background:url(../images/hear-h-logo.png) no-repeat;
+}
+#header-h .header-h-b form{
+    height:58px;
+    width: 438px;
+    padding-left:70px;
+    position:relative;
+    z-index: 1;
+}
+#header-h .header-h-b form input[type="text"]{
+    height:30px;
+    width: 332px;
+    border:1px solid #593B3A;
+    font-size: 14px;
+    color:#837575;
+    line-height: 30px;
+    float:left;
+    padding-left:22px;
+    background-color:#CFCFCF;
+}
+#header-h .header-h-b form .icon-search{
+    position:absolute;
+    left:74px;
+    top:8px;
+    font-size: 14px; 
+}
+#header-h .header-h-b form input[type="button"]{
+    height:32px;
+    width: 82px;
+    background-color:#442724;
+    font-size: 14px;
+    color:#fff;
+    line-height: 32px;
+    text-align: center;
+     float:left;
+}
+#header-h .header-h-b form p{
+    height:26px;
+    line-height: 26px;
+    font-size: 12px;
+   
+}
+#header-h .header-h-b form p a{
+     color:#fff;
+     text-decoration: underline;
+}
+#header-h .header-h-b h2{
+    box-sizing: border-box;
+    height:58px;
+    width: 158px;
+    font-size: 16px;
+    color:#fff;
+    padding:13px 0 0 28px;
+    position:relative;
+}
+#header-h .header-h-b h2 .icon-tel{
+    font-size: 24px;
+    position:absolute;
+    left:0px;
+    top:8px; 
+}
