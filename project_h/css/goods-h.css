@@ -1,0 +1,206 @@
+#goodsList-h{
+    border-top:3px solid #CFCFCF;
+    background-color: #fff;
+}
+#goodsList-h .container{
+    height:1536px;
+}
+#goodsList-h h3{
+    height:29px;
+    width:951px;
+    line-height: 29px;
+    padding-left: 24px;
+    position:relative;
+}
+#goodsList-h h3 a{
+    font-size: 12px;
+    color:#000;
+}
+#goodsList-h h3 i{
+    display:block;
+    font-size:24px;
+    height:29px;
+    width: 24px;
+    position:absolute;
+    top:8px;
+    left:8px;
+    color:#999999;
+
+}
+#goodsList-h .goods-h{}
+#goodsList-h .goods-h .goods-h-l{
+    height:1507px;
+    width: 200px;
+}
+#goodsList-h .goods-h .goods-h-l h4{
+    height:22px;
+    font-size: 12px;
+    color:#404040;
+    padding-top:7px;
+    line-height: 24px;
+    
+    border-bottom: 2px solid #CFCFCF;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-m ul{
+    width: 200px;
+    height: 529px;
+    padding-top:8px;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-m ul li{
+    height:26px;
+    line-height:26px;
+    font-size: 14px;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-m ul li i{
+    font-size: 12px;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-m ul a{
+    display:block;
+    height:24px;
+    font-size: 12px;
+    line-height: 24px;
+    color:#6E3354;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-b{
+    height:936px;
+    border-top:1px solid #CFCFCF;
+    padding-top: 2px;    
+}
+
+#goodsList-h .goods-h .goods-h-l .good-h-l-b h4{
+    height:14px;
+    background-color: #ECECEC;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-b h5{
+    height:12px;
+    padding-left:10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-b ul li{
+    height:236px;
+    border-bottom:1px dashed #ECECEC;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-b ul li p{
+    font-size: 12px;
+    line-height: 18px;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-b ul li p span{
+    color:#FF4552;
+}
+#goodsList-h .goods-h .goods-h-l .good-h-l-b ul li .last{
+    color:#629053;
+}
+
+
+#goodsList-h .goods-h .goods-h-r{
+    height:1507px;
+    width: 770px;
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t {
+    border-bottom:2px solid #000;
+    font-size: 12px;
+    line-height: 29px;
+    height:30px;
+  
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t h4{
+    height:29px;
+   width:180px;
+   display:inline-block;
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t h4 a{
+    padding-left:13px;
+    color:#FF4500;
+    position:relative;
+
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t h4 .last{
+    color:#6E3333;
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t h4 a i{
+    color:#FAB641;
+    position:absolute;
+    right:-14px;
+    top:-8px;
+    font-size: 14px;
+}
+
+
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t p{
+    height:29px;
+    width:190px;
+    display:inline-block;
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t p a{
+    padding-left:18px;
+    position:relative;
+    color:#8F3333;
+}
+#goodsList-h .goods-h .goods-h-r .goods-h-r-t p a i{
+    display:block;
+    height:8px;
+    width: 8px;
+    background:url(../images/outletbox-h.fw.png) no-repeat -260px 0;
+    position:absolute;
+    top:3px;
+    right:-12px;
+}
+
+
+#goods_h_r_b{
+    width:765px;
+    height:1421px;
+    padding:9px 0 0 5px;
+
+
+}
+#goods_h_r_b li{
+    float:left;
+    height:285px;
+    width: 173px;
+    font-size: 12px;
+    padding-right:18px;
+}
+#goods_h_r_b .goods_content{
+    line-height:18px;
+}
+#goods_h_r_b .del_sale{
+    color:#5A5A5A;
+}
+#goods_h_r_b .now_sale{
+    color:#FF4500;
+    line-height: 24px;
+}
+#goods_h_r_b .save_sale{
+    color:#228B30;
+    line-height:18px;
+}
+#goods_h_r_b .list_sale{
+    line-height: 24px;
+    text-decoration: underline;
+}
+#goodsList-h .goods-h-r .goods-h-r_b_b{
+    height:34px;
+    width: 290px;
+    padding:12px 0 0 468px;
+    font-size: 12px;
+}
+#goodsList-h .goods-h-r .goods-h-r_b_b span{
+    color:#393333;
+    font-weight: bold;
+}
+#goodsList-h .goods-h-r .goods-h-r_b_b a{
+    padding-left: 16px;
+    color:#8F3333;
+    position:relative;
+}
+#goodsList-h .goods-h-r .goods-h-r_b_b a i{
+    display:block;
+    height:8px;
+    width: 8px;
+    background:url(../images/outletbox-h.fw.png) no-repeat -260px 0;
+    position:absolute;
+    top:3px;
+    right:-12px;
+}
