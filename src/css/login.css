@@ -1,0 +1,153 @@
+#h_l_top {
+  background-color: #fff; }
+  #h_l_top .h_l_logo {
+    height: 100px;
+    background: url(../images/login_top_logo.png) no-repeat;
+    margin-left: 136px; }
+
+#login_middle {
+  height: 530px;
+  background-image: url(../images/login_middle.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  #login_middle .login_form {
+    height: 392px;
+    width: 360px;
+    position: absolute;
+    top: 75px;
+    right: 32px;
+    background-color: #fff;
+    color: #757575; }
+    #login_middle .login_form .ordinary_login {
+      height: 50px;
+      background-color: skyblue;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px; }
+    #login_middle .login_form input {
+      height: 38px;
+      width: 306px;
+      border: 1px solid #EEEEEE;
+      margin: 20px 0 0 26px;
+      padding-left: 38px; }
+    #login_middle .login_form i {
+      display: block;
+      height: 22px;
+      width: 22px; }
+    #login_middle .login_form .login_text {
+      background: url(../images/login.fw.png) no-repeat;
+      position: absolute;
+      top: 78px;
+      left: 36px; }
+    #login_middle .login_form .login_psd {
+      background: url(../images/login.fw.png) no-repeat -30px 0;
+      position: absolute;
+      top: 136px;
+      left: 38px; }
+    #login_middle .login_form .login_checkbox {
+      height: 36px;
+      margin: 38px 29px 0 26px;
+      padding-bottom: 24px;
+      font-size: 12px; }
+      #login_middle .login_form .login_checkbox .checkbox {
+        height: 12px;
+        width: 12px;
+        margin: 0; }
+      #login_middle .login_form .login_checkbox .forget {
+        color: #5D5E5F; }
+    #login_middle .login_form .login_btn {
+      width: 310px;
+      height: 40px;
+      background-color: skyblue;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      margin-left: 26px; }
+    #login_middle .login_form .speed_login {
+      height: 12px;
+      font-size: 12px;
+      margin: 28px 25px 0 26px;
+      padding-left: 174px; }
+    #login_middle .login_form .other_login {
+      height: 56px;
+      margin: 15px 0 0 26px; }
+      #login_middle .login_form .other_login .other_user {
+        display: block;
+        font-size: 12px; }
+      #login_middle .login_form .other_login .qw_login {
+        display: inline-block;
+        height: 40px;
+        width: 50px;
+        line-height: 40px;
+        text-align: right;
+        position: relative;
+        color: #4D4D4D;
+        font-size: 12px; }
+        #login_middle .login_form .other_login .qw_login .qw {
+          display: block;
+          height: 16px;
+          width: 18px; }
+        #login_middle .login_form .other_login .qw_login .qq {
+          background: url(../images/login.fw.png) no-repeat -60px 0;
+          position: absolute;
+          top: 13px;
+          left: 0; }
+        #login_middle .login_form .other_login .qw_login .wechat {
+          background: url(../images/login.fw.png) no-repeat -90px 0;
+          position: absolute;
+          top: 13px;
+          left: 0; }
+      #login_middle .login_form .other_login .wechat_login {
+        margin-left: 10px; }
+
+#footer .footer_top {
+  height: 214px;
+  background-color: #fff;
+  padding: 40px 160px 0 98px; }
+  #footer .footer_top dl {
+    padding: 8px 0 0 0;
+    float: left;
+    position: relative; }
+    #footer .footer_top dl dt {
+      padding-right: 102px;
+      font-size: 18px;
+      line-height: 26px;
+      color: #666; }
+    #footer .footer_top dl .last {
+      padding-right: 0; }
+    #footer .footer_top dl dd {
+      line-height: 22px;
+      font-size: 12px;
+      color: #999; }
+    #footer .footer_top dl .footer_nav {
+      display: block;
+      height: 32px;
+      width: 30px;
+      background: url(../images/login.fw.png) no-repeat -110px 0;
+      position: absolute;
+      top: 5;
+      left: -40px; }
+
+#footer .footer_middle {
+  height: 70px;
+  background: url(../images/footer_middle.png) no-repeat; }
+
+#footer .footer_bottom {
+  height: 110px;
+  padding-top: 44px;
+  text-align: center;
+  font-size: 12px;
+  color: #999; }
+  #footer .footer_bottom .footer_links .links {
+    display: inline-block;
+    padding-right: 6px;
+    border-right: 2px solid #999;
+    color: #999; }
+  #footer .footer_bottom .footer_links .last {
+    padding-left: 6px;
+    border-right: none; }
+  #footer .footer_bottom .footer_icp {
+    display: block;
+    margin-top: 12px; }

@@ -1,0 +1,459 @@
+/*(1)清除默认样式*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	outline-style: none;
+}
+
+
+/*去掉input等聚焦时的蓝色边框*/
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+select,
+input {
+	vertical-align: middle;
+}
+
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+
+textarea {
+	resize: none;
+}
+
+
+/*防止拖动*/
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+
+table {
+	border-collapse: collapse;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*（2）添加公共样式*/
+
+
+/*body {
+    font:12px Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}*/
+
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+	zoom: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+
+s,
+i,
+em {
+	font-style: normal;
+	text-decoration: none;
+}
+
+
+/*公共类*/
+
+.container {
+	/*内容、版心 提取 */
+	width: 1200px;
+	/*background-color:yellow;*/
+	margin: 0 49px 0 14px;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.ac {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.f12 {
+	font-size: 12px;
+}
+
+.f14 {
+	font-size: 14px;
+}
+
+.f16 {
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#fixedNav{
+	width:35px;
+	height:1000px;
+	background-color:#0068B6;
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:2;
+}
+#fixedNav .buyCar_link{
+  	display:block;
+  	color:#fff;
+  	padding:30px 0 0 10px;
+  }
+  #fixedNav .buyCar_link .buycar_span{
+  	display:block;
+  	width:14px;
+  	
+  }
+
+#life_top {
+	background-color: #F5F5F5;
+	font-size: 12px;
+}
+
+#life_top .life_top_l,
+#life_top .life_top_r {
+	line-height: 30px;
+	height: 30px;
+	padding-left: 6px;
+	position: relative;
+}
+
+#life_top .life_top_com .left_link {
+	display: inline-block;
+	height: 30px;
+	color: #37A0DB;
+}
+
+#life_top .life_top_com .left_link .left_span {
+	padding: 0 10px;
+	border-right: 1px solid #BEA4A4;
+}
+
+#life_top .life_top_l .wb {
+	display: inline-block;
+	height: 14px;
+	width: 17px;
+}
+
+#life_top .life_top_l .left_wechat {
+	background: url(../images/login.fw.png) no-repeat -90px 0;
+	position: absolute;
+	top: 8px;
+	right: -22px;
+}
+
+#life_top .life_top_l .left_blog {
+	background: url(../images/login.fw.png) no-repeat -140px 0;
+	position: absolute;
+	top: 8px;
+	right: -46px;
+}
+
+#life_top .life_top_com .left_link .last {
+	border-right: none;
+}
+
+#life_logo .logo_left {
+	height: 100px;
+	width: 192px;
+	background: url(../images/soolift_logo.png) no-repeat;
+	text-indent: -999em;
+}
+
+#life_logo .goods_search {
+	height: 100px;
+	width: 600px;
+	margin-left: 108px;
+	padding: 31px 0 0 0;
+}
+
+#life_logo .goods_search .goods_input {
+	width: 510px;
+	height: 36px;
+	border: 3px solid #37A0DB;
+	border-right: 0 none;
+}
+
+#life_logo .goods_search .goods_btn {
+	width: 90px;
+	height: 36px;
+	background-color: #37A0DB;
+	color: #fff;
+}
+
+#life_logo .goods_search .left_link {
+	display: inline-block;
+	height: 30px;
+	color: #37A0DB;
+	font-size: 12px;
+}
+
+#life_logo .goods_search .left_link .left_span {
+	padding: 0 10px;
+	border-right: 1px solid #BEA4A4;
+}
+
+#life_logo .hot_line {
+	height: 100px;
+	width: 240px;
+	background: url(../images/logo_hot_tel.png) no-repeat;
+}
+
+/*nav css*/
+#nav {
+	border-bottom: 2px solid #FF3F72;
+	position: relative;
+}
+
+#nav .nav_header {
+	height: 40px;
+	width: 240px;
+	background-color: #FF3F72;
+	line-height: 40px;
+	color: #fff;
+	padding-left: 25px;
+	font-size: 18px;
+}
+
+#nav .goods_nav .goods_nav_li {
+	float: left;
+	padding-right: 65px;
+	height: 38px;
+	line-height: 38px;
+	color: #555;
+}
+
+#nav .goods_nav .first {
+	padding-left: 40px;
+	color: #FF4A7A;
+}
+
+#nav .goods_nav .goods_nav_li:hover {
+	color: #FF4A7A;
+}
+
+#nav .nav_list {
+	height: 482px;
+	width: 240px;
+	
+	background: #FF5A85;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	left: 14px;
+	top: 42px;
+	z-index: 6;
+}
+
+#nav .nav_list .nav_list_li {
+	padding: 0 25px;
+	height: 40px;
+	line-height: 40px;	
+}
+
+#nav .nav_list .nav_list_li .nav_list_a{
+	display:block;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+	padding-left: 9px;
+} 
+#nav .nav_list .nav_list_li:hover{
+	background-color: #fff;	
+}
+#nav .nav_list .nav_list_li:hover .nav_list_a{
+	color:#1990B8;
+	
+}
+#nav .nav_show {
+	position: absolute;
+	top: 42px;
+	left: 254px;
+	display: none;
+	z-index: 6;
+}
+
+#nav .nav_show .nav_show_left {
+	height: 520px;
+	width: 690px;
+	padding: 28px 0 0 52px;
+	background-color: #fff;
+	font-size: 12px;
+}
+
+#nav .nav_show .nav_show_left .show_bag {
+	margin-bottom: 22px;
+}
+
+#nav .nav_show .nav_show_left h3 {
+	color: #333;
+	margin-right: 12px;
+}
+
+#nav .nav_show .nav_show_left .show_content {}
+
+#nav .nav_show .nav_show_left .show_content .show_link .show_span {
+	padding: 0 13px 0 10px;
+	border-left: 1px solid #CCC;
+	color: #999;
+}
+
+#nav .nav_show .nav_show_right {
+	height: 520px;
+	width: 270px;
+	background: url(../images/show3.png) no-repeat;
+}
+
+
+/*footer css*/
+
+
+#footer .footer_top {
+	height: 214px;
+	background-color: #fff;
+	padding: 40px 160px 0 98px;
+}
+
+#footer .footer_top dl {
+	padding: 8px 0 0 0;
+	float: left;
+	position: relative;
+}
+
+#footer .footer_top dl dt {
+	padding-right: 102px;
+	font-size: 18px;
+	line-height: 26px;
+	color: #666;
+}
+
+#footer .footer_top dl .last {
+	padding-right: 0;
+}
+
+#footer .footer_top dl dd {
+	line-height: 22px;
+	font-size: 12px;
+	color: #999;
+}
+
+#footer .footer_top dl .footer_nav {
+	display: block;
+	height: 32px;
+	width: 30px;
+	background: url(../images/login.fw.png) no-repeat -110px 0;
+	position: absolute;
+	top: 5;
+	left: -40px;
+}
+
+#footer .footer_middle {
+	height: 70px;
+	background: url(../images/footer_middle.png) no-repeat;
+}
+
+#footer .footer_bottom {
+	height: 110px;
+	padding-top: 44px;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+}
+
+#footer .footer_bottom .footer_links .links {
+	display: inline-block;
+	padding-right: 6px;
+	border-right: 2px solid #999;
+	color: #999;
+}
+
+#footer .footer_bottom .footer_links .last {
+	padding-left: 6px;
+	border-right: none;
+}
+
+#footer .footer_bottom .footer_icp {
+	display: block;
+	margin-top: 12px;
+}
+
+
+/*login 公共头部样式*/
+
+#h_l_top .h_l_logo {
+	height: 100px;
+	background: url(../images/login_top_logo.png) no-repeat;
+	margin-left: 136px;
+}

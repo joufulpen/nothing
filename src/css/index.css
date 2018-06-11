@@ -1,0 +1,140 @@
+
+/*banner*/
+#banner{
+	height:480px;
+	overflow: hidden;
+}
+
+/*goods*/
+#goods_list .goods1{
+	overflow: hidden;
+}
+#goods_list .goods1 .goods1_li{
+	float:left;
+	height:158px;
+	width:232px;
+	padding:8px 0 10px 0; 
+	margin-right: 8px;
+	overflow: hidden;
+	position:relative;
+}
+
+#goods_list .goods1 .goods1_li .goods1_img{
+	height:140px;
+	width:238px;
+	display:block;
+	position:absolute;
+	left:0;
+	top:8px;
+}
+#goods_list .goods1_bottom{
+	margin-bottom:10px;
+}
+#goods_list .goods1_bottom .goods1_b_img{
+	height:120px;
+	width:100%;
+	display:block;
+}
+#goods_list .goods2 .goods2_img{
+	width:100%;
+	height:80px;
+	display:block;
+}
+#goods_list .goods3{
+	overflow: hidden;
+}
+#goods_list .goods3 .goods3_li{
+	float:left;
+	width:400px;
+	height:220px;
+	position:relative;
+	overflow: hidden;
+} 
+#goods_list .goods3 .goods3_li .goods3_img{
+	display:block;
+	height:220px;
+	width:406px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#goods_list .goods4 h5{
+	height:40px;
+	padding-left:25px;
+	line-height:40px;
+	font-size: 18px;
+	color:#555;
+}
+#goods_list .goods4 .goods4_cont .cont_left{
+	width:320px;
+}
+#goods_list .goods4 .goods4_cont .cont_left .cont_left_img .goods4_li{
+	float:left;
+}
+#goods_list .goods4 .goods4_cont .cont_left .cont_left_img .goods4_li .goods4_img{
+	display:block;
+	width:320px;
+	height:300px
+}
+#goods_list .goods4 .goods4_cont .cont_left .cont_left_b{
+	height:200px;
+	background-color: #F9D6EC;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com{
+	overflow:hidden;
+	width:880px;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .goods5_li{
+	float:left;
+	width:220px;
+	height:250px;
+	position:relative;
+	overflow: hidden;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .goods5_li .goods5_img{
+	height:250px;
+	display:block;
+	width:226px;
+	position:absolute;
+
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .goods6_li{
+	float:left;
+	width:220px;
+	height:250px;
+	position:relative;
+	overflow: hidden;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .goods6_li .goods6_img{
+	height:250px;
+	display:block;
+	width:226px;
+	position:absolute;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .goods7_li{
+	float:left;
+	width:220px;
+	height:250px;
+	position:relative;
+	overflow: hidden;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .goods7_li .goods7_img{
+	height:250px;
+	display:block;
+	width:226px;
+	position:absolute;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .maxLi{
+	width:440px;
+}
+#goods_list .goods4 .goods4_cont .cont_right_com .maxLi .maxImg{
+	width:446px;
+}
+#goods_list .goods4_bottom{
+	margin-top:10px;
+}
+#goods_list .goods4_bottom .goods4_b_img{
+	height:120px;
+	width:100%;
+	display:block;
+}

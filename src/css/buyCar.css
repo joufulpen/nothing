@@ -1,0 +1,68 @@
+  
+  #carList li {
+  	position: relative;
+  	padding-bottom: 15px;
+  	margin-bottom: 15px;
+  	border-bottom: 1px solid #ddd;
+  }
+  
+  #carList img {
+  	display: block;
+  	width: 100px;
+  }
+  
+  #carList li .btn-close {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	padding: 0 5px;
+  	cursor: default;
+  }
+  
+  #carList li .btn-close:hover {
+  	background-color: #f00;
+  	color: #fff;
+  }
+  
+  .subPrice {
+  	padding: 5px 20px;
+  	color: #f00;
+  	font-weight: bold;
+  	text-align: right;
+  }
+  
+  #carList .price span {
+  	color: #f00;
+  	font-size: 14px;
+  }
+  
+  .price span::before,
+  .subPrice::before {
+  	content: '￥';
+  	font-size: 12px;
+  }
+  
+  #carList .price span {
+  	font-size: 11px;
+  }
+#btnClear{
+	display:block;
+	width:100px;
+	height:35px;
+	text-align: center;
+	line-height: 35px;
+	color:#fff;
+	background-color: #358CCB;
+}
+#carbox{
+	position:relative;
+}
+#carbox .cover{
+	height:35px;
+	width:100%;
+	background-color: #ccc;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 1;
+}
